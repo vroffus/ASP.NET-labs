@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "w5gSjXc3TVHS80EbgXfkO5jkxDrXjzg2SSaT4JgvOvo=",
+  "Source": "ConfigAnalysisService",
+  "BasePath": "_content/ConfigAnalysisService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

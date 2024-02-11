@@ -1,0 +1,13 @@
+<configuration>
+	<Companies>
+		<Microsoft>
+			<Employees>100000</Employees>
+		</Microsoft>
+		<Apple>
+			<Employees>137000</Employees>
+		</Apple>
+		<Google>
+			<Employees>118899</Employees>
+		</Google>
+	</Companies>
+</configuration>
