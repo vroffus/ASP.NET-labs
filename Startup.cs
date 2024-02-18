@@ -1,31 +1,29 @@
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
+
 public class Startup
 {
-    public Startup(IConfiguration configuration)
-    {
-        Configuration = configuration;
-    }
-
-    public IConfiguration Configuration { get; }
-
     public void ConfigureServices(IServiceCollection services)
     {
-        services.AddSingleton<CompanyService>();
-        services.AddSingleton<InfoService>();
+        services.AddControllers();
+        services.AddSingleton<CalcService>();
+        services.AddTransient<TimeOfDayService>();
     }
 
-    public void Configure(IApplicationBuilder app, IWebHostEnvironment env, CompanyService companyService, InfoService infoService)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
         if (env.IsDevelopment())
         {
             app.UseDeveloperExceptionPage();
         }
 
-        app.Run(async (context) =>
+        app.UseRouting();
+
+        app.UseEndpoints(endpoints =>
         {
-            var companyWithMostEmployees = companyService.GetCompanyWithMostEmployees();
-            var myInfo = infoService.GetMyInfo();
-            await context.Response.WriteAsync($"Company with most employees: {companyWithMostEmployees}\n" +
-                $"My info {myInfo}");
+            endpoints.MapControllers();
         });
     }
 }

@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\dev\\uni\\asp\\Lab2\\ConfigAnalysisService\\ConfigAnalysisService.csproj",
-      "projectName": "ConfigAnalysisService",
-      "projectPath": "C:\\Users\\Admin\\Documents\\dev\\uni\\asp\\Lab2\\ConfigAnalysisService\\ConfigAnalysisService.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\dev\\uni\\asp\\Lab3\\Lab3\\Lab3.csproj",
+      "projectName": "Lab3",
+      "projectPath": "C:\\Users\\Admin\\Documents\\dev\\uni\\asp\\Lab3\\Lab3\\Lab3.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\dev\\uni\\asp\\Lab2\\ConfigAnalysisService\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\dev\\uni\\asp\\Lab3\\Lab3\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
