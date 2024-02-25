@@ -1,3 +1,6 @@
+using Microsoft.AspNetCore.Hosting;
+using Microsoft.Extensions.Hosting;
+
 public class Program
 {
     public static void Main(string[] args)
@@ -7,13 +10,6 @@ public class Program
 
     public static IHostBuilder CreateHostBuilder(string[] args) =>
         Host.CreateDefaultBuilder(args)
-            .ConfigureAppConfiguration((hostingContext, config) =>
-            {
-                config.AddJsonFile("companyinfo.json", optional: true, reloadOnChange: true);
-                config.AddXmlFile("companyinfo.xml", optional: true, reloadOnChange: true);
-                config.AddIniFile("companyinfo.ini", optional: true, reloadOnChange: true);
-                config.AddJsonFile("myinfo.json", optional: true, reloadOnChange: true);
-            })
             .ConfigureWebHostDefaults(webBuilder =>
             {
                 webBuilder.UseStartup<Startup>();

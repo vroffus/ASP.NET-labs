@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "w5gSjXc3TVHS80EbgXfkO5jkxDrXjzg2SSaT4JgvOvo=",
-  "Source": "ConfigAnalysisService",
-  "BasePath": "_content/ConfigAnalysisService",
+  "Hash": "LE9259PsHAsZ1ByJHnO2uamuUbddEpWiCrULVjFm9fc=",
+  "Source": "Lab",
+  "BasePath": "_content/Lab",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
