@@ -8,19 +8,19 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Roffus\\.nuget\\packages\\": {}
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roffus\\Documents\\uni\\asp\\lab3\\Lab\\Lab.csproj",
-      "projectName": "Lab",
-      "projectPath": "C:\\Users\\Roffus\\Documents\\uni\\asp\\lab3\\Lab\\Lab.csproj",
-      "packagesPath": "C:\\Users\\Roffus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roffus\\Documents\\uni\\asp\\lab3\\Lab\\obj\\",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\uni\\asp\\lab4\\lab4\\lab4.csproj",
+      "projectName": "lab4",
+      "projectPath": "C:\\Users\\Admin\\Documents\\uni\\asp\\lab4\\lab4\\lab4.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\uni\\asp\\lab4\\lab4\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Roffus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
