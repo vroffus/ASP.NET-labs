@@ -1,39 +1,48 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Http;
-using System;
+using Microsoft.AspNetCore.Mvc;
+
 public class HomeController : Controller
 {
     [HttpGet]
-    public IActionResult Index()
+    public IActionResult Register()
     {
         return View();
     }
 
     [HttpPost]
-    public IActionResult Index(string value, DateTime expiryDate)
+    public IActionResult Register(User user)
     {
-        CookieOptions options = new CookieOptions();
-        options.Expires = expiryDate;
-
-        Response.Cookies.Append("MyCookie", value, options);
-
-        return RedirectToAction("CheckCookie");
-    }
-
-    public IActionResult CheckCookie()
-    {
-       // string cookieValue = Request.Cookies["MyCookie"];
-
-        string cookieValue = null;
-        var length = cookieValue.Length;
-
-        if (cookieValue == null)
+        if (user.Age < 16)
         {
-            return Content("No cookie found.");
+            return View("UnderAge");
         }
         else
         {
-            return Content($"Cookie value: {cookieValue}");
+            return RedirectToAction("Order", "Home");
         }
+    }
+
+    [HttpGet]
+    public IActionResult Order()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Order(int quantity)
+    {
+        return RedirectToAction("ProductForm", "Home", new { quantity = quantity });
+    }
+
+    [HttpGet]
+    public IActionResult ProductForm(int quantity)
+    {
+        ViewBag.Quantity = quantity;
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult ProductForm(List<Product> products)
+    {
+        return View("Summary", products);
     }
 }
