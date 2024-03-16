@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Documents\\uni\\asp\\PizzaOrder\\PizzaOrder\\PizzaOrder.csproj",
-      "projectName": "PizzaOrder",
-      "projectPath": "C:\\Users\\Admin\\Documents\\uni\\asp\\PizzaOrder\\PizzaOrder\\PizzaOrder.csproj",
+      "projectUniqueName": "C:\\Users\\Admin\\Documents\\uni\\asp\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectName": "WebApplication1",
+      "projectPath": "C:\\Users\\Admin\\Documents\\uni\\asp\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Documents\\uni\\asp\\PizzaOrder\\PizzaOrder\\obj\\",
+      "outputPath": "C:\\Users\\Admin\\Documents\\uni\\asp\\WebApplication1\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
