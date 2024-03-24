@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Lab8.Models.Product>
+
+<h2>Список продуктів</h2>
+<ul>
+    @foreach (var product in Model)
+    {
+        <li>@product.ID. @product.Name - @product.Price$ (@product.CreatedDate)</li>
+    }
+</ul>
+
+<a href="@Url.Action("Table", "Product")">Перейти до таблиці продуктів</a>
